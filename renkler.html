@@ -9,17 +9,9 @@
 </head>
 <body>
     <div class="container row">
-        <div class="red-cube" id="elmaImageTR"></div>
-        <div class="red-cube" id="elmaImageEN"></div>
+        <div class="cube bg-red" id="kirmiziImageTR"></div>
+        <div class="cube bg-red" id="kirmiziImageEN"></div>
     </div>
-
-    <div class="container row">
-        <div class="red-cube" id="kirmiziImageTR"></div>
-        <div class="red-cube" id="kirmiziImageEN"></div>
-    </div>
-
-    <audio id="elmaAudioTR" src="sounds/meyveler/tr/elma.mp3"></audio>
-    <audio id="elmaAudioEN" src="sounds/meyveler/en/elma.mp3"></audio>
     
     <audio id="kirmiziAudioTR" src="sounds/renkler/tr/kirmizi.mp3"></audio>
     <audio id="kirmiziAudioEN" src="sounds/renkler/en/kirmizi.mp3"></audio>
@@ -27,24 +19,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        const elmaImageTR = document.getElementById('elmaImageTR');
-        const elmaImageEN = document.getElementById('elmaImageEN');
-        const elmaAudioTR = document.getElementById('elmaAudioTR');
-        const elmaAudioEN = document.getElementById('elmaAudioEN');
-        
+    <script>        
         const kirmiziImageTR = document.getElementById('kirmiziImageTR');
         const kirmiziImageEN = document.getElementById('kirmiziImageEN');
         const kirmiziAudioTR = document.getElementById('kirmiziAudioTR');
         const kirmiziAudioEN = document.getElementById('kirmiziAudioEN');
-
-        elmaImageTR.addEventListener('click', () => {
-            elmaAudioTR.play();
-        });
-
-        elmaImageEN.addEventListener('click', () => {
-            elmaAudioEN.play();
-        });
 
         kirmiziImageTR.addEventListener('click', () => {
             kirmiziAudioTR.play();
