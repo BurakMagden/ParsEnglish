@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Audio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/Red_Apple.jpg" alt="Red Apple" id="elmaLeftImage">
+        <img src="images/Red_Apple.jpg" alt="Red Apple" id="elmaRightImage">
+    </div>
+
+    <div class="container">
+        <img src="images/Red_Apple.jpg" alt="Red Apple" id="kirmiziLeftImage">
+        <img src="images/Red_Apple.jpg" alt="Red Apple" id="kirmiziRightImage">
+    </div>
+
+    <audio id="elmaAudio" src="sounds/elma.mp3"></audio>
+    <audio id="appleAudio" src="sounds/apple.mp3"></audio>
+    <audio id="kirmiziAudio" src="sounds/kırmızı.mp3"></audio>
+    <audio id="redAudio" src="sounds/red.mp3"></audio>
+
+    <script>
+        const elmaLeftImage = document.getElementById('elmaLeftImage');
+        const elmaRightImage = document.getElementById('elmaRightImage');
+        const elmaAudio = document.getElementById('elmaAudio');
+        const appleAudio = document.getElementById('appleAudio');
+        
+        const kirmiziLeftImage = document.getElementById('kirmiziLeftImage');
+        const kirmiziRightImage = document.getElementById('kirmiziRightImage');
+        const kirmiziAudio = document.getElementById('kirmiziAudio');
+        const redAudio = document.getElementById('redAudio');
+
+        elmaLeftImage.addEventListener('click', () => {
+            elmaAudio.play();
+        });
+
+        elmaRightImage.addEventListener('click', () => {
+            appleAudio.play();
+        });
+
+        kirmiziLeftImage.addEventListener('click', () => {
+            kirmiziAudio.play();
+        });
+
+        kirmiziRightImage.addEventListener('click', () => {
+            redAudio.play();
+        });
+    </script>
+</body>
+</html>
