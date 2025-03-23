@@ -12,25 +12,104 @@
         <div class="cube bg-red" id="kirmiziImageTR"></div>
         <div class="cube bg-red" id="kirmiziImageEN"></div>
     </div>
+
+    <div class="container row">
+        <div class="cube bg-blue" id="maviImageTR"></div>
+        <div class="cube bg-blue" id="maviImageEN"></div>
+    </div>
+    
+    <div class="container row">
+        <div class="cube bg-purple" id="morImageTR"></div>
+        <div class="cube bg-purple" id="morImageEN"></div>
+    </div>
+    
+    <div class="container row">
+        <div class="cube bg-yellow" id="sariImageTR"></div>
+        <div class="cube bg-yellow" id="sariImageEN"></div>
+    </div>
+    
+    <div class="container row">
+        <div class="cube bg-green" id="yesilImageTR"></div>
+        <div class="cube bg-green" id="yesilImageEN"></div>
+    </div>
     
     <audio id="kirmiziAudioTR" src="sounds/renkler/tr/kirmizi.mp3"></audio>
     <audio id="kirmiziAudioEN" src="sounds/renkler/en/kirmizi.mp3"></audio>
+    
+    <audio id="maviAudioTR" src="sounds/renkler/tr/mavi.mp3"></audio>
+    <audio id="maviAudioEN" src="sounds/renkler/en/mavi.mp3"></audio>
+    
+    <audio id="morAudioTR" src="sounds/renkler/tr/mor.mp3"></audio>
+    <audio id="morAudioEN" src="sounds/renkler/en/mor.mp3"></audio>
+    
+    <audio id="sariAudioTR" src="sounds/renkler/tr/sari.mp3"></audio>
+    <audio id="sariAudioEN" src="sounds/renkler/en/sari.mp3"></audio>
+    
+    <audio id="yesilAudioTR" src="sounds/renkler/tr/yesil.mp3"></audio>
+    <audio id="yesilAudioEN" src="sounds/renkler/en/yesil.mp3"></audio>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>        
+    <script>
         const kirmiziImageTR = document.getElementById('kirmiziImageTR');
         const kirmiziImageEN = document.getElementById('kirmiziImageEN');
         const kirmiziAudioTR = document.getElementById('kirmiziAudioTR');
         const kirmiziAudioEN = document.getElementById('kirmiziAudioEN');
+        
+        const maviImageTR = document.getElementById('maviImageTR');
+        const maviImageEN = document.getElementById('maviImageEN');
+        const maviAudioTR = document.getElementById('maviAudioTR');
+        const maviAudioEN = document.getElementById('maviAudioEN');
+        
+        const morImageTR = document.getElementById('morImageTR');
+        const morImageEN = document.getElementById('morImageEN');
+        const morAudioTR = document.getElementById('morAudioTR');
+        const morAudioEN = document.getElementById('morAudioEN');
+        
+        const sariImageTR = document.getElementById('sariImageTR');
+        const sariImageEN = document.getElementById('sariImageEN');
+        const sariAudioTR = document.getElementById('sariAudioTR');
+        const sariAudioEN = document.getElementById('sariAudioEN');
+        
+        const yesilImageTR = document.getElementById('yesilImageTR');
+        const yesilImageEN = document.getElementById('yesilImageEN');
+        const yesilAudioTR = document.getElementById('yesilAudioTR');
+        const yesilAudioEN = document.getElementById('yesilAudioEN');
 
         kirmiziImageTR.addEventListener('click', () => {
             kirmiziAudioTR.play();
         });
-
         kirmiziImageEN.addEventListener('click', () => {
             kirmiziAudioEN.play();
+        });
+
+        maviImageTR.addEventListener('click', () => {
+            maviAudioTR.play();
+        });
+        maviImageEN.addEventListener('click', () => {
+            maviAudioEN.play();
+        });
+
+        morImageTR.addEventListener('click', () => {
+            morAudioTR.play();
+        });
+        morImageEN.addEventListener('click', () => {
+            morAudioEN.play();
+        });
+
+        sariImageTR.addEventListener('click', () => {
+            sariAudioTR.play();
+        });
+        sariImageEN.addEventListener('click', () => {
+            sariAudioEN.play();
+        });
+
+        yesilImageTR.addEventListener('click', () => {
+            yesilAudioTR.play();
+        });
+        yesilImageEN.addEventListener('click', () => {
+            yesilAudioEN.play();
         });
     </script>
 </body>
